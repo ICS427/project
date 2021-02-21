@@ -1,0 +1,404 @@
+@import url('https://fonts.google.com/specimen/Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
+/* Resetting Variables */
+body, html {margin:0; padding:0}
+
+/*
+  For: Parallax
+*/
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.parallax::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+/*
+
+  For: Navbar and Footer
+  Notes:
+
+ */
+
+#navbar {
+  background-color: white !important;
+  position: relative;
+  z-index: 500;
+}
+
+#navbar .navitem {
+  color: black !important;
+}
+
+.footer {
+  padding-top: 15px;
+  background-color: #134600;
+  color: white;
+  position: relative;
+  z-index: 500;
+}
+
+/*
+
+  For: Landing Page
+  Notes: Front Page for Unregistered Users
+
+*/
+
+.signup {
+  font-family: "Lora", sans-serif;
+  height: 100vh;
+}
+
+.signup-form {
+  background-image: url("https://mediadc.brightspotcdn.com/dims4/default/5445204/2147483647/strip/true/crop/2290x1321+0+0/resize/2290x1321!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F49%2Fed%2F1a04aae447a2b1ff03e6fe15d5c0%2Funiversity-of-hawaii-manoa.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.signup-format {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+  z-index: 3;
+}
+
+.signup .background {
+  background-image: linear-gradient(150deg, green, white);
+  opacity: 0.8;
+  transform: skewY(-12deg);
+  width: 100%;
+  height: 100%;
+  transform-origin: -10em;
+  position: absolute;
+  z-index: 1;
+}
+
+.signup .image {
+  background-image: url("https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg");
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.signup .heading {
+  color: white !important;
+  margin-top: 0 !important;
+  font-size: 60px !important;
+  font-family: "Lora", sans-serif !important;
+  text-align: left;
+  z-index: 2;
+}
+
+.signup .description {
+  color: white !important;
+  padding-right: 5em !important;
+  font-family: "Lora", sans-serif !important;
+  font-weight: normal !important;
+  text-align: left;
+  z-index: 2;
+}
+
+.signup .form {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+  position: absolute;
+  z-index: 3;
+}
+
+.signup .form .item {
+  text-align: left;
+  font-size: 15px;
+  margin: 3em 1em !important;
+}
+
+
+/*
+  For: Landing Page
+ */
+
+.foreground_box_signup {
+  position: absolute;
+  background: #49EEAF;
+  width: 800px;
+  height: 500px;
+  top: 15%;
+  left: 32%;
+  border-radius: 5px;
+  box-shadow: 10px 19px 40px rgba(0, 0, 0, .1);
+  z-index: 2;
+}
+
+.foreground_box_signup .heading{
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+.signup-input {
+  background: #49EEAF;
+  width: 80%;
+  color: #359B74;
+  border: none;
+}
+
+
+/*
+
+  For: Sign In Page
+  Notes: No one touch.  I am still trying to figure out why some of this stuff works and other's don't
+
+ */
+.ui.container .signin {
+  margin-left: 0 !important;
+}
+
+.signin {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_Garden_%40_UH_Manoa_%285674163092%29.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Sign in general */
+.signin .p {
+  font-family: "Open Sans", sans-serif;
+  font-size: .7em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  opacity: .5;
+  text-align: center;
+}
+
+.signin .logo {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  top: 50%;
+  left: 30%;
+}
+
+/* Sign in form */
+
+.signin .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.signin .form .input {
+  background: #49EEAF;
+  width: 65%;
+  color: #359B74;
+  border: none;
+  padding: 9px;
+  margin: 5px -1em !important;
+}
+
+/* Midground Box, Contains Logo and Sign Up Button */
+
+.midground_box {
+  background: white;
+  width: 650px;
+  height: 415px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  border-radius: 5px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+}
+
+.midground_box .description {
+  position: absolute;
+  width: 50%;
+  right: -2%;
+}
+
+.midground_box .title {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.8;
+  color: #8E9AAF;
+  font-size: 2em;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+
+/* Annoucement Board */
+
+.announcementBoard-header {
+  padding-top: 20px;
+  font-family: "Playfair Display", serif !important;
+}
+
+.card-style {
+  box-shadow: -8px 10px 76px -16px rgba(0,0,0,0.64);
+}
+
+/* Foreground Box, Contians Sign In Form */
+
+.foreground_box {
+  position: absolute;
+  background: #49EEAF;
+  width: 320px;
+  height: 500px;
+  top: 15%;
+  left: 32%;
+  border-radius: 5px;
+  box-shadow: 10px 19px 40px rgba(0, 0, 0, .1);
+  z-index: 2;
+}
+
+.foreground_box .heading {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+/*
+
+  For: Profile Page
+
+*/
+
+.profile {
+  margin-bottom: 4em;
+}
+
+.profile .user_info .profile_picture {
+  margin: 2em;
+}
+
+.profile .user_info .name {
+  margin-left: 1em;
+  font-size: 30px !important;
+}
+
+.profile .user_info .heading {
+  margin-left: 1.5em;
+}
+
+.profile .user_info .list {
+  margin-left: 3em !important;
+}
+
+.profile .club_info {
+  margin-top: 2em;
+}
+
+/*
+
+  For: Club Explorer Page 
+
+*/
+
+.club-explorer-background {
+  background-position: center;
+  color: white;
+}
+
+.club-explorer-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-shadow: 2px 2px 7px #000000;
+  font-size: 150%;
+}
+
+.clubcards {
+  padding: 5px 5px 5px 5px;
+}
+/*
+
+  For: Landing Page
+
+*/
+
+.landing-title {
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.content Header {
+  font-size: 50px !important;
+}
+
+.img-background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.landing-body {
+  background: black !important;
+  color: black !important;
+  position: relative;
+}
+
+myHeader {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.content2 {
+  position: absolute;
+  max-width: 600px;
+  top: 20%;
+  padding: 60px 120px;
+  margin: 0px 0px 0px -3px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.featured-clubs {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 20%;
+  font-size: 30px;
+}
+
+.card-layout {
+  position: relative;
+  top: -150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-description {
+  color: white !important;
+}

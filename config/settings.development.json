@@ -1,0 +1,48 @@
+{
+  "defaultAccounts": [
+    { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "N/A", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
+      "joined": ["Accounting Club at UH Manoa"],
+      "favorite": [],
+      "banned": []
+    }, "interests": ["Academic"], "majors": ["Computer Science"],
+      "newUser": false
+    },
+    { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "N/A", "leader": "Academy for Creative Media Student Association", "clubs" : {
+      "joined": ["Academy for Creative Media Student Association"],
+      "favorite": [],
+      "banned": []
+    }, "interests": [], "majors": ["Visual Design"],
+      "newUser": false
+    },
+    { "username": "john","email": "john@foo.com", "password": "changeme", "image": "N/A", "leader": "", "clubs" : {
+      "joined": [],
+      "favorite": [],
+      "banned": []
+    }, "interests": ["Art"], "majors": ["Computer Science"],
+      "newUser": false
+    },
+    { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
+      "joined": ["Academy for Creative Media Student Association"],
+      "favorite": ["Smash Bros. Club at The University of Hawaii at Manoa", "Cannabis Club"],
+      "banned": []
+    }, "interests": ["Art", "Academic"], "majors": ["Computer Science", "Visual Design"],
+      "newUser": false
+    }
+  ],
+
+  "defaultAnnouncements": [
+    { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money", "date": "\"2014-01-01T23:28:56.782Z\""},
+    { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club", "date" : "\"2014-01-01T23:28:56.782Z\""},
+    { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things", "date" :  "\"2014-01-01T23:28:56.782Z\""}
+  ],
+
+  "defaultInterests": [{
+    "name": "art",
+    "associated_clubs": ["Academy for Creative Media Student Association"]
+  },
+    {
+      "name": "academic",
+      "associated_clubs": ["Academy for Creative Media Student Association", "Accounting Club at UH Manoa"]
+    }],
+  "defaultMajors": [{ "name": "Computer Science"}, {"name":  "Accounting"}, {"name": "Art"}, {"name": "Chinese"}, {"name": "Computer Engineering"}]
+}
